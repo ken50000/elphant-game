@@ -482,10 +482,26 @@ body.present .hidden-item{display:none!important}
 @media (max-width:760px){
   .toast{bottom:auto;top:calc(12px + env(safe-area-inset-top,0px));animation:none}
 }
+@media (max-width:560px){
+  .theme-h{flex-wrap:nowrap;align-items:flex-start;gap:6px}
+  .theme-h3{min-width:0}
+  .theme-toggle{flex-wrap:wrap;gap:2px 8px;align-items:center}
+  .theme-toggle .tbar{display:none}
+  .theme-toggle>span:nth-child(2){flex:1 1 0;min-width:0;overflow-wrap:anywhere;line-height:1.25}
+  .theme-toggle .count{order:5;flex:1 0 100%;padding-left:20px;font-size:.8125rem}
+  .theme-h .pin{flex:0 0 auto;margin-top:6px}
+  .stats{gap:8px}
+  .stat{padding:10px}
+  .stat .eyebrow{font-size:.6875rem;letter-spacing:.04em}
+  .stat .v{font-size:1.75rem}
+  .stat .sub{font-size:.75rem}
+  .justin p{flex-basis:100%}
+}
 @media (max-width:420px){
-  .stats{grid-template-columns:1fr}
-  .stat .v{font-size:2rem}
   .teams{grid-template-columns:1fr}
+}
+@media (max-width:339px){
+  .stats{grid-template-columns:1fr}
 }
 </style>
 
